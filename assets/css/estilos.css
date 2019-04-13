@@ -1,0 +1,134 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+/* -------------- CABECERA -------------*/
+.header{
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+.ofertas-header{
+    text-align: center;
+    background: black;
+    height: 30px;
+
+}
+#ofertas{
+color: white;
+}
+
+.navbar{
+    display: flex;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+.logo{
+    height: 60px;
+    flex: 2 1 auto;
+}
+
+.menu-header{
+    flex:3 1 auto;
+}
+.iconos{
+    color:black;
+    flex:1 1 auto;
+}
+/*-------------- BANNER--------------*/
+.banner img{
+    height: 300px;
+    width: 100vw;
+}
+/*¨--------------PRODUCTOS-----------*/
+.productos{
+display: flex;
+margin-left: 80px;
+margin-right: 80px;
+justify-content: space-around;
+
+}
+.texto-productos {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom:50px;
+}
+.card{
+    background: black;
+    width: 180px;
+    height: auto;
+    border:none;
+    
+    
+   
+}
+.card .img{
+    overflow: hidden;
+    
+}
+.card .img img{
+    height: 160px;
+}
+.card .titulo h1, .card .precio h2{
+    font-size: 18px;
+}
+.card .titulo , .card .precio {
+    padding: 10px;
+}
+/*--------------------SERVICIOSssssss------*/
+.servicios{
+    margin-left:120px;
+    margin-right: 120px;
+}
+.card-servicios{
+    display:flex;
+    justify-content: space-around;
+    letter-spacing: 2px;
+}
+.pagos,.envios,.calidad,.tienda-fisica{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pagos i,.envios i,.calidad i,.tienda-fisica i{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+/*-------MAPAAAAAAA----*/
+.mapa{
+    display: flex;
+    justify-content: space-around;
+    background-position: center center;
+    margin-top:50px;
+    margin-left:200px;
+    margin-right: 200px;
+}
+.maps-text{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+}
+.maps-content iframe{
+    height: 200px;
+    width: 400px;
+    
+     
+}
+.maps-content{
+    background:#e6e6e6;
+    padding: 30px;
+    border-top:1px solid black;
+}
+#olvido_clave{
+    margin-left:60px;
+}
+#btn-registrar, #btn-login{
+    margin-top:20px;
+}
+#btn-login{
+    margin-left: 220px;
+}
