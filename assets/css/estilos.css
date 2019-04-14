@@ -1,174 +1,224 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
 }
+
 /* -------------- CABECERA -------------*/
-.header{
+.header {
     height: 120px;
     display: flex;
     flex-direction: column;
-    width: 100vw;
 }
-.ofertas-header{
+
+.ofertas-header {
     text-align: center;
     background: black;
     height: 30px;
 
 }
-#ofertas{
-color: white;
+
+#ofertas {
+    color: white;
 }
 
-.navbar{
+.navbar {
     display: flex;
     margin-right: 40px;
     margin-left: 40px;
 }
-.logo{
+
+.logo {
     height: 60px;
-    flex: 2 1 auto;
+    flex: 0 1 auto;
+}
+.logo h3{
+    font-size:22px;
+    margin-top:15px;
+   
 }
 
-.menu-header{
-    flex:3 1 auto;
+.menu-header {
+    flex: 1 1 auto;
 }
-.iconos{
-    color:black;
-    flex:1 1 auto;
+
+.iconos {
+    color: black;
+    flex: 1 1 auto;
 }
+
 /*-------------- BANNER--------------*/
-.banner img{
+.banner img {
     height: 300px;
     width: 100vw;
 }
+
 /*¨--------------PRODUCTOS-----------*/
-.productos{
-display: flex;
-margin-left: 80px;
-margin-right: 80px;
-justify-content: space-around;
+.productos {
+    display: flex;
+    margin-left: 80px;
+    margin-right: 80px;
+    justify-content: space-around;
 
 }
+
 .texto-productos {
     display: flex;
     justify-content: center;
     margin-top: 50px;
-    margin-bottom:50px;
+    margin-bottom: 50px;
 }
-.card{
+
+.card {
     background: black;
     width: 180px;
     height: auto;
-    border:none;
-    
-    
-   
+    border: none;
+
+
+
 }
-.card .img{
+
+.card .img {
     overflow: hidden;
-    
+
 }
-.card .img img{
+
+.card .img img {
     height: 160px;
 }
-.card .titulo h1, .card .precio h2{
+
+.card .titulo h1,
+.card .precio h2 {
     font-size: 18px;
 }
-.card .titulo , .card .precio {
+
+.card .titulo,
+.card .precio {
     padding: 10px;
 }
+
 /*--------------------SERVICIOSssssss------*/
-.servicios{
-    margin-left:120px;
+.servicios {
+    margin-left: 120px;
     margin-right: 120px;
 }
-.card-servicios{
-    display:flex;
+
+.card-servicios {
+    display: flex;
     justify-content: space-around;
     letter-spacing: 2px;
 }
-.pagos,.envios,.calidad,.tienda-fisica{
+
+.pagos,
+.envios,
+.calidad,
+.tienda-fisica {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.pagos i,.envios i,.calidad i,.tienda-fisica i{
+
+.pagos i,
+.envios i,
+.calidad i,
+.tienda-fisica i {
     font-size: 40px;
     margin-bottom: 20px;
 }
+
 /*-------MAPAAAAAAA----*/
-.mapa{
+.mapa {
     display: flex;
     justify-content: space-around;
     background-position: center center;
-    margin-top:50px;
-    margin-left:200px;
+    margin-top: 50px;
+    margin-left: 200px;
     margin-right: 200px;
 }
-.maps-text{
+
+.maps-text {
     display: flex;
     flex-direction: column;
-   align-items: center;
+    align-items: center;
 }
-.maps-content iframe{
+
+.maps-content iframe {
     height: 200px;
     width: 400px;
-    
-     
+
+
 }
-.maps-content{
-    background:#e6e6e6;
+
+.maps-content {
+    background: #e6e6e6;
     padding: 30px;
-    border-top:1px solid black;
-    border-bottom:1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
-.social-maps i{
+
+.social-maps i {
     font-size: 30px;
     letter-spacing: 10px;
 }
-#olvido_clave{
-    margin-left:60px;
+
+#olvido_clave {
+    margin-left: 60px;
 }
-#btn-registrar, #btn-login{
-    margin-top:20px;
+
+#btn-registrar,
+#btn-login {
+    margin-top: 20px;
 }
-#btn-login{
+
+#btn-login {
     margin-left: 220px;
 }
+
 /*_-------------------FOOTERRRRRR-----*/
-.footer{
+.footer {
     background: #e6e6e6;
     margin-top: 50px;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
 }
-.footer-suscribe,.footer-menu,.footer-tienda{
-    margin-top:40px;
+
+.footer-suscribe,
+.footer-menu,
+.footer-tienda {
+    margin-top: 40px;
 }
-.footer-content{
+
+.footer-content {
     display: flex;
     justify-content: space-around;
 }
-.derechos-autor{
-    display:flex;
+
+.derechos-autor {
+    display: flex;
     justify-content: space-between;
 }
-.social-derechos{
+
+.social-derechos {
     margin-left: 100px;
 }
-.social-derechos i, .payment i{
+
+.social-derechos i,
+.payment i {
     font-size: 32px;
     letter-spacing: 10px;
 }
-.payment{
+
+.payment {
     margin-right: 100px;
 }
-#paypal{
-    color:#207dff;
+
+#paypal {
+    color: #207dff;
 }
-#billete{
-    color:#7bc67b;
+
+#billete {
+    color: #7bc67b;
 }
