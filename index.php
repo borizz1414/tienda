@@ -64,7 +64,28 @@
     </header>
     <!-- BANNER -->
     <section class="banner">
-        <img src="assets/img/pic01.jpg" alt="">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="assets/img/pic01.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="assets/img/pic08.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="assets/img/pic09.jpg" alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
 
     </section>
     <!--TEXTO PRODUCTOS DESTACADOS-->
@@ -203,7 +224,7 @@
                </div>
                <div class="phone-maps">
                 <p>📞 Phone:041414141414</p>
-                <p>🚩 Ubicación: El trebol, edo Vargas, Venezuela.</p>
+                <p>📌 Ubicación: El trebol, edo Vargas, Venezuela.</p>
                 <p>📫 Correo: ferreteria@gmail.com</p>
                 <p>🗓️ Horario: Lunes a Viernes | 9am a 6pm</p>
                </div>
@@ -211,9 +232,9 @@
                     <h1>Social</h1>
                </div>
                <div class="social-maps">
-               <i class="fab fa-instagram"></i>
-               <i class="fab fa-twitter-square"></i>
-               <i class="fab fa-facebook-square"></i>
+               <a href=""><i class="fab fa-instagram"></i></a>
+               <a href=""><i class="fab fa-twitter-square"></i></a>
+               <a href=""><i class="fab fa-facebook-square"></i></a>
                </div>
                <div class="horario-maps">
 
@@ -225,6 +246,53 @@
     
     <!--PIE DE PAGINA-->
     <footer class="footer">
+        <div class="footer-content">
+        <div class="footer-suscribe">
+            <p>SUSCRIBETE PARA RECIBIR NUESTRAS OFERTAS ❤️</p>
+            <div class="input-group mb-3">
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="button">SUSCRIBIRSE</button>
+  </div>
+  <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+</div>
+        </div>
+        <div class="footer-menu">
+            <p>MENU INFERIOR</p>
+            <ul class="nav flex-column">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Inicio</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Productos</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Devoluciones</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Contacto</a>
+  </li>
+  
+</ul>
+        </div>
+        <div class="footer-tienda">
+            <p>FERRETERIA SAN ARNALDO 🔧</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        </div>
+        </div>
+        <hr>
+        <div class="derechos-autor">
+            <div class="social-derechos">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-facebook-square"></i><br>
+            <span>Desarrollador por 👨‍💻 Boris L. &copy; - 2019. </span>
+            </div>
+            <div class="payment">
+            <i class="fab fa-cc-paypal" id="paypal"></i>
+            <i class="fas fa-money-check-alt"></i>
+            <i class="fas fa-money-bill-wave" id="billete"> </i>
+            </div>
+        </div>
         
     </footer>
 </div>

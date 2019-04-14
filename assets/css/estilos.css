@@ -122,6 +122,11 @@ justify-content: space-around;
     background:#e6e6e6;
     padding: 30px;
     border-top:1px solid black;
+    border-bottom:1px solid black;
+}
+.social-maps i{
+    font-size: 30px;
+    letter-spacing: 10px;
 }
 #olvido_clave{
     margin-left:60px;
@@ -131,4 +136,39 @@ justify-content: space-around;
 }
 #btn-login{
     margin-left: 220px;
+}
+/*_-------------------FOOTERRRRRR-----*/
+.footer{
+    background: #e6e6e6;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.footer-suscribe,.footer-menu,.footer-tienda{
+    margin-top:40px;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-around;
+}
+.derechos-autor{
+    display:flex;
+    justify-content: space-between;
+}
+.social-derechos{
+    margin-left: 100px;
+}
+.social-derechos i, .payment i{
+    font-size: 32px;
+    letter-spacing: 10px;
+}
+.payment{
+    margin-right: 100px;
+}
+#paypal{
+    color:#207dff;
+}
+#billete{
+    color:#7bc67b;
 }
