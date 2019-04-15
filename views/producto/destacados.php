@@ -1,4 +1,5 @@
- <!--TEXTO PRODUCTOS DESTACADOS-->
+
+ <!--TEXTO PRODU</div>CTOS DESTACADOS-->
  <div class="texto-productos">
       <div class="mas-vendidos">
         <h2>🔝 Todos los productos 🔝</h2>

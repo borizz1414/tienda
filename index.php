@@ -6,6 +6,7 @@ require_once 'config/db.php';
 require_once 'config/parametros.php';
 require_once 'helpers/utilities.php';
 require_once 'views/layout/header.php';
+require_once 'views/layout/slider.php';
 
 function show_error(){
     $error= new errorController();
@@ -33,8 +34,8 @@ if(class_exists($nombre_controlador)){
         $controlador->$action();
     }
     elseif(!isset($_GET['controller']) && !isset($_GET['action'])){
-        $action_desault = action_default;
-        $controlador->$default();
+        $action_default = action_default;
+        $controlador->$action_default();
     }else{
        show_error();
     }

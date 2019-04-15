@@ -70,4 +70,4 @@ if(isset($_SESSION['register']) && $_SESSION['register'] == 'complete'): ?>
           width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
     </section>
-
+    

@@ -48,11 +48,11 @@ class Usuario{
 	}
 
 	public function getPassword() {
-		return $this->password;
+		return password_hash($this->db->real_escape_string($this->password),PASSWORD_BCRYPT, ['cost'=>4]);
 	}
 
 	public function  setPassword($password) {
-		$this->password = password_hash($this->db->real_escape_string($password),PASSWORD_BCRYPT, ['cost'=>4]);
+		$this->password = $password;
 	}
 
 	public function getImagen() {
@@ -80,7 +80,26 @@ class Usuario{
         }
         return $result;
         
-    }
+	}
+	public function login(){
+		$resultado=false;
+		$email = $this->email;
+		$password = $this->password;
+		
+		//comprobar si existe el usuario
+		$sql="SELECT * FROM usuarios where email = '$email'";
+		$login = $this->db->query($sql);
+		if($login && $login->num_rows ==1){
+			$usuario = $login->fetch_object();
+			//verificar clave
+			$verify  = password_verify($password, $usuario->password);
+			
+			if($verify){
+			$resultado = $usuario;
+			}
+		}
+		return $resultado;
+	}
     
 }
 ?>
