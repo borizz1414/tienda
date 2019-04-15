@@ -72,6 +72,7 @@
       </nav>
 
     </header>
+    <div class="contenedor-section">
     <!-- BANNER -->
     <section class="banner">
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -191,6 +192,7 @@
       </div>
       <hr>
     </section>
+</div>
     <section class="mapa">
       <div class="maps-form">
         <form>

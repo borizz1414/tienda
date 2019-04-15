@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -39,12 +39,18 @@
               <a class="nav-link" href="#">Categoria 1</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Categoria 2</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="#">Contacto</a>
             </li>
-        </ul>   
+            <li class="nav-item">
+              <a class="nav-link" href="#">Mis pedidos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gestionar categorias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gestionar productos</a>
+            </li>
+          </ul>
         </div>
         <div class="iconos">
           <ul class="nav justify-content-end">
@@ -63,5 +69,6 @@
       </nav>
 
     </header>
+    <div class="contenedor-section">
  
   
