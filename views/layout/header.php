@@ -41,15 +41,6 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Contacto</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Mis pedidos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Gestionar categorias</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Gestionar productos</a>
-            </li>
           </ul>
         </div>
         <div class="iconos">

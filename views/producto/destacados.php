@@ -8,9 +8,9 @@
     </div>
  <!--CONTENIDO CENTRAL-->
  <section class="productos">
-     <div class="categorias-product">
+     <div class="categorias-product sombra">
      <div class="input-group mb-3">
-  <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Ingrese el nombre del producto" aria-describedby="button-addon2">
+  <input type="text" class="form-control" placeholder="Nombre del producto"  aria-describedby="button-addon2">
   <div class="input-group-append">
     <button class="btn btn-outline-secondary" type="button" id="button-addon2">Buscar</button>
   </div>
@@ -39,6 +39,17 @@
          </div>
          <div class="titulo">
              <h1>Gas refrigeranssssssssssssssssssssssstes</h1>
+         </div>
+         <div class="precio">
+             <h2>Bs S. 1.000.000</h2>
+         </div>
+     </div>
+     <div class="card">
+         <div class="img">
+             <img src="assets/img/pic01.jpg">
+         </div>
+         <div class="titulo">
+             <h1>Gas refrigerante</h1>
          </div>
          <div class="precio">
              <h2>Bs S. 1.000.000</h2>
