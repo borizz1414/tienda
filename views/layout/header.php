@@ -21,7 +21,7 @@
 <body>
   <div class="contenedor">
     <!--CABECERA-->
-    <header class="header">
+    <header class="header fixed-top">
       <div class="ofertas-header">
         <p id="ofertas">⚡20% de descuento de toda la web⚡</p>
       </div>

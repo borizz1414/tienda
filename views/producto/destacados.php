@@ -6,6 +6,7 @@
 
       </div>
     </div>
+    <hr>
  <!--CONTENIDO CENTRAL-->
  <section class="productos">
      <div class="categorias-product sombra">
@@ -86,3 +87,4 @@
     </div>
  </section>
  </div>
+ 

@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
     
+    
 }
 
 /* -------------- CABECERA -------------*/
@@ -11,7 +12,7 @@
     height: 120px;
     display: flex;
     flex-direction: column;
-    border-bottom:1px solid #858585;
+   background: white;
 }
 
 .ofertas-header {
@@ -54,7 +55,7 @@
 .contenedor-section{
     margin-left:100px;
     margin-right: 100px;
-    margin-top:20px;
+    margin-top:120px;
 }
 /*------banner - login-----*/
 .banner-login{
@@ -67,12 +68,11 @@
 .login-register{
     flex:0 1 auto;
     min-width: 324px;;
-}
-.login-register{
-   
+    margin-right:20px;  
 box-shadow: inset 0px 200px 72px -34px rgba(255,255,255,1);
 background:#bfbfbf;
-border-bottom:2px solid #858585;
+
+border-radius: 10px;
 }
 .sombra{
     
@@ -99,6 +99,13 @@ margin-left:10px;
 .productos {
     display: flex;
     justify-content: space-around;
+
+        box-shadow: inset 0px 200px 72px -34px rgba(255,255,255,1);
+        background: #bfbfbf;
+        padding: 15px;
+        border-radius: 10px;
+    
+    
 
 }
 .all-products{
