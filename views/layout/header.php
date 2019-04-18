@@ -39,8 +39,11 @@
               <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Productos</a>
               <div class="dropdown-menu">
               <a class="dropdown-item disabled" href="#">Categorias</a>
-              <a class="dropdown-item" href="#">Gas</a>
-              <a class="dropdown-item" href="#">Piezas</a>
+              <?php 
+              $categorias = Utilities::showCategorias();
+              while($cat = $categorias->fetch_object()): ?>
+              <a class="dropdown-item" href="#"><?=$cat->nombre;?></a>
+              <?php endwhile; ?>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#">Accesorios</a>
               </div>
