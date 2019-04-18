@@ -15,15 +15,18 @@
     <button class="btn btn-outline-secondary" type="button" id="button-addon2">Buscar</button>
   </div>
 </div>
+<h4>Categorias</h4>
          <div class="categorias-items">
-         <div class="btn-group-vertical" role="group" aria-label="Button group with nested dropdown">
-  <button type="button" class="btn btn-secondary">Categoria uno</button>
-  <button type="button" class="btn btn-secondary">Categoria dos</button>
+         <div class="btn-group-vertical cat-items" role="group" aria-label="Button group with nested dropdown">
+         <?php
+          $categorias = Utilities::showCategorias();
+          while($cat = $categorias->fetch_object()): ?>
+  <button type="button" class="btn btn-secondary"> <?=$cat->nombre;?></button>
 
+  <?php endwhile; ?>
   <div class="btn-group" role="group">
     <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Dropdown
-    </button>
+      Accesorios<button>
     <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
       <a class="dropdown-item" href="#">Dropdown link</a>
       <a class="dropdown-item" href="#">Dropdown link</a>
@@ -77,6 +80,9 @@
              <h2>Bs S. 1.000.000</h2>
          </div>
      </div>
+   
+ 
+     
     </div>
  </section>
  </div>

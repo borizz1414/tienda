@@ -6,7 +6,7 @@ require_once 'config/db.php';
 require_once 'config/parametros.php';
 require_once 'helpers/utilities.php';
 require_once 'views/layout/header.php';
-require_once 'views/layout/slider.php';
+
 
 function show_error(){
     $error= new errorController();

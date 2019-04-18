@@ -33,11 +33,21 @@
         <div class="menu-header">
           <ul class="nav justify-content-center">
             <li class="nav-item">
-              <a class="nav-link active" href="#">Inicio</a>
+              <a class="nav-link active" href="<?=base_url?>">Inicio</a>
             </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Productos</a>
+              <div class="dropdown-menu">
+              <a class="dropdown-item disabled" href="#">Categorias</a>
+              <a class="dropdown-item" href="#">Gas</a>
+              <a class="dropdown-item" href="#">Piezas</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Accesorios</a>
+              </div>
             <li class="nav-item">
-              <a class="nav-link" href="#">Categoria 1</a>
+              <a class="nav-link" href="#">Sobre nosotros</a>
             </li>
+            
             <li class="nav-item">
               <a class="nav-link" href="#">Contacto</a>
             </li>

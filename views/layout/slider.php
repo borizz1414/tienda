@@ -1,25 +1,27 @@
  <!-- BANNER -->
- 
 <!-- BANNER -->
 <div class="banner-login">
 <div class="login-register">
       
       <div class="dropdown-menuu">
-  <form class="px-4 py-3" action="<?=base_url?>" method="POST">
+  <form class="px-4 py-3" action="<?=base_url?>usuario/login" method="POST">
     <div class="form-group"><?php if(isset($_SESSION['identity'])): ?>
     <div class="perfil-content">
     <img src="<?=base_url?>assets/img/user.png" alt="" id="user_png"><br>
-    <label  for="exampleDropdownFormEmail1">Bienvenido  <?= $_SESSION['identity']->nombre ?></label>
+    <label  for="exampleDropdownFormEmail1">Bienvenido  <?=$_SESSION['identity']->nombre ?></label>
     <label for="exampleDropdownFormEmail1"> <?= $_SESSION['identity']->apellidos ?></label>
     <ul id="menu-perfil">
     <a href=""><li>🕴️  Mi perfil</li></a>
       <a href=""><li>📦 Mis pedidos</li></a>
-      <a href=""><li>🖌️ Gestionar categorias</li></a>
+      <?php if(isset($_SESSION['admin'])): ?>
+      <a href="<?=base_url?>categoria/crear"><li>🖌️ Gestionar categorias</li></a>
       <a href=""><li>📝 Gestionar productos</li></a>
+      <a href=""><li>📝 Gestionar pedidos</li></a>
     </ul>
+<?php endif; ?>
     </div>
     <div class="cc">
-      <a href="" id="cerrar-sesion">Cerrar sesion</a>
+      <a href="<?=base_url?>usuario/logout" id="cerrar-sesion">Cerrar sesion</a>
     </div>
     <?php else: ?>
       <label for="exampleDropdownFormEmail1">Email address</label>
@@ -29,7 +31,7 @@
       
       <label class="form-check-label" for="dropdownCheck">
       <button type="submit" class="btn btn-primary">Iniciar sesion</button>
-        <a class="dropdown-item" href="#">No estas registrado? Registrate</a>
+        <a class="dropdown-item" href="<?=base_url?>usuario/registro">No estas registrado? Registrate</a>
   <a class="dropdown-item" href="#">Olvidastes tu contraseña?</a>
        
         </label>

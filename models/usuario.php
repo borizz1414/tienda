@@ -10,6 +10,7 @@ class Usuario{
     private $password;
     private $imagen;
 	private $rol;
+	private $db;
 	
     public function __construct(){
         $this->db=Database::connect();

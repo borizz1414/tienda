@@ -33,7 +33,7 @@
 
 .logo {
     height: 60px;
-    flex: 0 1 auto;
+    flex: 1 1 auto;
 }
 .logo h3{
     font-size:22px;
@@ -69,15 +69,13 @@
     min-width: 324px;;
 }
 .login-register{
-    box-shadow: inset 0px 200px 72px -34px rgba(255,255,255,1);
-box-shadow: inset 0px 200px 72px -34px rgba(255,255,255,1);
+   
 box-shadow: inset 0px 200px 72px -34px rgba(255,255,255,1);
 background:#bfbfbf;
 border-bottom:2px solid #858585;
 }
 .sombra{
-    box-shadow: inset 0px -200px 95px -78px rgba(255,255,255,1);
-box-shadow: inset 0px -200px 95px -78px rgba(255,255,255,1);
+    
 box-shadow: inset 0px -200px 95px -78px rgba(255,255,255,1);
 background:#bfbfbf;
 border-top:2px solid #858585;
@@ -183,8 +181,7 @@ flex: 1 1 auto;
     justify-content: space-around;
     background-position: center center;
     margin-top: 50px;
-    margin-left: 200px;
-    margin-right: 200px;
+
 }
 
 .maps-text {
@@ -220,9 +217,18 @@ flex: 1 1 auto;
 #btn-login {
     margin-top: 20px;
 }
-
+#btn-registrar{
+    width: 100%;
+}
 #btn-login {
     margin-left: 220px;
+}
+#btn-loginn{
+    width: 100%;
+    
+}
+#btn-loginn a{
+color:white;
 }
 
 /*_-------------------FOOTERRRRRR-----*/
@@ -270,4 +276,11 @@ flex: 1 1 auto;
 
 #billete {
     color: #7bc67b;
+}
+/*-------------CATEGORIa-----------*/
+#btn-agg-categoria{
+    margin-bottom:10px;
+}
+.cat-items{
+ width: 100%;
 }

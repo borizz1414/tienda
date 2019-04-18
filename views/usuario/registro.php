@@ -38,9 +38,10 @@ if(isset($_SESSION['register']) && $_SESSION['register'] == 'complete'): ?>
                 Recuperar usuario</label></a>
           </div>
           <button type="submit" class="btn btn-primary" id="btn-registrar" value="registrarse">Registrarse</button>
-
-          <button type="submit" class="btn btn-primary" id="btn-login">Iniciar sesión</button>
+          <hr>
+          <a href="<?=base_url?>index.php" ><button class="btn btn-primary" id="btn-loginn">Iniciar sesión</button></a>
         </form>
+        
       </div>
       <div class="maps-content">
         <div class="maps-text">
