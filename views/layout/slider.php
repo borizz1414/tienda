@@ -13,9 +13,11 @@
     <ul id="menu-perfil">
     <a href=""><li>🕴️  Mi perfil</li></a>
       <a href=""><li>📦 Mis pedidos</li></a>
+      <a href=""><li>📧 Contacto</li></a>
+      <a href=""><li>💡 Ayuda</li></a>
       <?php if(isset($_SESSION['admin'])): ?>
       <a href="<?=base_url?>categoria/crear"><li>🖌️ Gestionar categorias</li></a>
-      <a href=""><li>📝 Gestionar productos</li></a>
+      <a href="<?=base_url?>producto/gestion"><li>📝 Gestionar productos</li></a>
       <a href=""><li>📝 Gestionar pedidos</li></a>
     </ul>
 <?php endif; ?>
