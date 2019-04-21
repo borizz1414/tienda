@@ -6,13 +6,17 @@
     
     
 }
-
+/*-----------imgEDIT--------*/
+#img-edit{
+    width: 150px;
+}
 /* -------------- CABECERA -------------*/
 .header {
     height: 120px;
     display: flex;
     flex-direction: column;
    background: white;
+   border-bottom:1px solid #e6e6e6;
 }
 
 .ofertas-header {

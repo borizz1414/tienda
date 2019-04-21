@@ -37,50 +37,25 @@
          </div>
      </div>
      <div class="all-products">
+     <?php while($produ = $productos->fetch_object()) : ?>
      <div class="card">
          <div class="img">
-             <img src="assets/img/pic01.jpg">
+         
+         <?php if($produ->imagen != null) :?>
+             <img src="<?=base_url?>uploads/images/<?=$produ->imagen?>">
+<?php else: ?>
+    <img src="assets/img/pic08.jpg" alt="">
+<?php endif; ?>
          </div>
          <div class="titulo">
-             <h1>Gas refrigeranssssssssssssssssssssssstes</h1>
+             <h1><?=$produ->nombre?></h1>
          </div>
          <div class="precio">
-             <h2>Bs S. 1.000.000</h2>
+             <h2>Bs S. <?=$produ->precio?></h2>
          </div>
      </div>
-     <div class="card">
-         <div class="img">
-             <img src="assets/img/pic01.jpg">
-         </div>
-         <div class="titulo">
-             <h1>Gas refrigerante</h1>
-         </div>
-         <div class="precio">
-             <h2>Bs S. 1.000.000</h2>
-         </div>
-     </div>
-     <div class="card">
-         <div class="img">
-             <img src="assets/img/pic01.jpg">
-         </div>
-         <div class="titulo">
-             <h1>Gas refrigerante</h1>
-         </div>
-         <div class="precio">
-             <h2>Bs S. 1.000.000</h2>
-         </div>
-     </div>
-     <div class="card">
-         <div class="img">
-             <img src="assets/img/pic01.jpg">
-         </div>
-         <div class="titulo">
-             <h1>Gas refrigerante</h1>
-         </div>
-         <div class="precio">
-             <h2>Bs S. 1.000.000</h2>
-         </div>
-     </div>
+<?php endwhile; ?>
+    
    
  
      
