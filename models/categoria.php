@@ -23,11 +23,11 @@ class Categoria{
 
 	public function setNombre($nombre) {
 		$this->nombre = $this->db->real_escape_string($nombre);
-	}
-
-    
-	
-   
+    }
+    public function getOne(){
+        $categoria = $this->db->query("SELECT * FROM categorias WHERE id={$this->getId()};");
+        return $categoria->fetch_object();
+    }
     public function getAll(){
         $categorias = $this->db->query("SELECT * FROM categorias ORDER BY id DESC;");
         return $categorias;

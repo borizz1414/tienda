@@ -42,7 +42,7 @@
               <?php 
               $categorias = Utilities::showCategorias();
               while($cat = $categorias->fetch_object()): ?>
-              <a class="dropdown-item" href="#"><?=$cat->nombre;?></a>
+              <a class="dropdown-item" href="<?=base_url?>categoria/ver&id=<?=$cat->id?>"><?=$cat->nombre;?></a>
               <?php endwhile; ?>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#">Accesorios</a>
